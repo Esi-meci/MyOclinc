@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyOclinc</title>
+    <link rel="stylesheet" href="../css/output.css">
+    <link rel="icon" href="/src/Assets/favicon.webp">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        /* Add custom styles here */
+        /* Example overlay styles */
+        .overlay {
+            background: rgba(0, 0, 0, 0.5); /* Adjust the opacity and color as needed */
+        }
+    </style>
+</head>
+<body class="max-w-[100vw]">
+    <div class="bg-white py-7 flex gap-4 px-10 lg:px-36 items-center justify-between">
+        <div class="w-1/12">
+            <img src="../src/Assets/mayo-clinic-logo.svg" alt="Logo">
+        </div>
+        <nav class="hidden lg:flex flex-col w-8/12">
+            <ul class="list-none flex gap-16 items-center">
+                <li>Care at <br> Mayo Clinic</li>
+                <li>Health <br> Library</li>
+                <li>For Medical <br> Professionals</li>
+                <li>Research & Education <br>at Mayo Clinic</li>
+                <li>Giving to <br> Mayo Clinic</li>
+            </ul>            
+        </nav>
+        <div class="flex gap-6 items-center">
+            <a href="#">Request appointment</a>
+            <div class="flex gap-1 items-center">
+                <i class="fa fa-male"></i>
+                <a href="#">Log in</a>
+            </div>
+            <i class="fa fa-search"></i>
+        </div>
+    </div>
+    <!-- <section class="relative">
+        <div class="w-full">
+            <video class="bg-video__content sm:h-96 w-[100%]" autoplay muted loop>
+                <source src="Assets/a.mp4" type="video/mp4">
+            </video>   
+        <div>         
+    </section> -->
+    <div class="relative h-[67vh]">
+        <!-- Video Background -->
+        <video class="absolute top-0 left-0 w-full h-full object-cover" autoplay muted loop>
+            <source src="Assets/a.mp4" type="video/mp4">
+        </video>
+
+        <!-- Overlay -->
+        <div class="absolute top-0 left-0 w-full h-full overlay"></div>
+
+        <!-- Content -->
+        <!-- <div class="absolute top-1/2 left-1/4 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
+            <h1 class="text-7xl font-[300] mb-4 px-10 lg:pl-96">Transformation is here.</h1>
+            <p class="text-lg px-10 lg:px-36">Your content goes here.</p>
+        </div> -->
+        <div class="absolute bottom-0 text-white pb-12">
+            <h1 class="text-7xl font-[300] mb-4 px-10 lg:px-36">Transformation is here.</h1>
+            <div>
+                <p>Find out more ></p>
+                <a href="">
+                    <div class>
+                        <i class="fa fa-date"></i>
+                        <p>Request an appointment</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="flex px-10 lg:px-36 flex-wrap space-y-5 lg:space-y-0 mb-16">
+        <div class="lg:w-1/2 lg:pr-3">
+            <h1 class="text-sm font-bold">Find diseases & conditions by first letter</h1>
+            <div class="flex flex-wrap xs:gap-2 sm:gap-x-6 lg:gap-2 text-center">
+                <div class="a w-[48px] h-[48px] my-auto border border-sky-500 text-blue-700 rounded-[100%]">
+                    <h1 class="border-sky-500 text-xl">A</h1>
+                </div>
+                <div class="a w-[48px] h-[48px] border border-sky-500 text-blue-700 rounded-[100%]">
+                    <h1 class="border-sky-500 text-xl">B</h1>
+                </div>
+                <div class="a w-[48px] h-[48px] border border-sky-500 text-blue-700 rounded-[100%]">
+                    <h1 class="border-sky-500 text-xl">C</h1>
+                </div>
+                <div class="a w-[48px] h-[48px] border border-sky-500 text-blue-700 rounded-[100%]">
+                    <h1 class="border-sky-500 text-xl">D</h1>
+                </div>
+                <div class="a w-[48px] h-[48px] border border-sky-500 text-blue-700 rounded-[100%]">
+                    <h1 class="border-sky-500 text-xl">E</h1>
+                </div>
+                <div class="a w-[48px] h-[48px] border border-sky-500 text-blue-700 rounded-[100%]">
+                    <h1 class="border-sky-500 text-xl">F</h1>
+                </div>
+                <div class="a w-[48px] h-[48px] border border-sky-500 text-blue-700 rounded-[100%]">
+                    <h1 class="border-sky-500 text-xl">G</h1>
+                </div>
+                <div class="a w-[48px] h-[48px] border border-sky-500 text-blue-700 rounded-[100%]">
+                    <h1 class="border-sky-500 text-xl">H</h1>
+                </div>
+                <div class="a w-[48px] h-[48px] border border-sky-500 text-blue-700 rounded-[100%]">
+                    <h1 class="border-sky-500 text-xl">I</h1>
+                </div>
+                <div class="a w-[48px] h-[48px] border border-sky-500 text-blue-700 rounded-[100%]">
+                    <h1 class="border-sky-500 text-xl">J</h1>
+                </div>
+                <div class="a w-[48px] h-[48px] border border-sky-500 text-blue-700 rounded-[100%]">
+                    <h1 class="border-sky-500 text-xl">K</h1>
+                </div>
+                <div class="a w-[48px] h-[48px] border border-sky-500 text-blue-700 rounded-[100%]">
+                    <h1 class="border-sky-500 text-xl">L</h1>
+                </div>
+                <div class="a w-[48px] h-[48px] border border-sky-500 text-blue-700 rounded-[100%]">
+                    <h1 class="border-sky-500 text-xl">M</h1>
+                </div>
+                <div class="a w-[48px] h-[48px] border border-sky-500 text-blue-700 rounded-[100%]">
+                    <h1 class="border-sky-500 text-xl">N</h1>
+                </div>
+                <div class="a w-[48px] h-[48px] border border-sky-500 text-blue-700 rounded-[100%]">
+                    <h1 class="border-sky-500 text-xl">O</h1>
+                </div>
+                <div class="a w-[48px] h-[48px] border border-sky-500 text-blue-700 rounded-[100%]">
+                    <h1 class="border-sky-500 text-xl">P</h1>
+                </div>
+                <div class="a w-[48px] h-[48px] border border-sky-500 text-blue-700 rounded-[100%]">
+                    <h1 class="border-sky-500 text-xl">Q</h1>
+                </div>
+                <div class="a w-[48px] h-[48px] border border-sky-500 text-blue-700 rounded-[100%]">
+                    <h1 class="border-sky-500 text-xl">R</h1>
+                </div>
+                <div class="a w-[48px] h-[48px] border border-sky-500 text-blue-700 rounded-[100%]">
+                    <h1 class="border-sky-500 text-xl">S</h1>
+                </div>
+                <div class="a w-[48px] h-[48px] border border-sky-500 text-blue-700 rounded-[100%]">
+                    <h1 class="border-sky-500 text-xl">T</h1>
+                </div>
+                <div class="a w-[48px] h-[48px] border border-sky-500 text-blue-700 rounded-[100%]">
+                    <h1 class="border-sky-500 text-xl">U</h1>
+                </div>
+                <div class="a w-[48px] h-[48px] border border-sky-500 text-blue-700 rounded-[100%]">
+                    <h1 class="border-sky-500 text-xl">V</h1>
+                </div>
+                <div class="a w-[48px] h-[48px] border border-sky-500 text-blue-700 rounded-[100%]">
+                    <h1 class="border-sky-500 text-xl">W</h1>
+                </div>
+                <div class="a w-[48px] h-[48px] border border-sky-500 text-blue-700 rounded-[100%]">
+                    <h1 class="border-sky-500 text-xl">X</h1>
+                </div>
+                <div class="a w-[48px] h-[48px] border border-sky-500 text-blue-700 rounded-[100%]">
+                    <h1 class="border-sky-500 text-xl">Y</h1>
+                </div>
+                <div class="a w-[48px] h-[48px] border border-sky-500 text-blue-700 rounded-[100%]">
+                    <h1 class="border-sky-500 place text-xl">Z</h1>
+                </div>
+            </div>
+        </div>
+        <div class="w-[100%] lg:w-1/2 lg:pl-3">
+            <h1 class="text-lg font-[400]">Search diseases & conditions</h1>
+            <div>
+                <input type="text" placeholder="Search" class="border border-black w-[100%] rounded-full py-4 px-5 outline-blue-700 hover:outline-dashed active:outline-dashed focus-visible:outline-dashed focus-within:outline-dashed focus:outline-dashed">
+            </div>
+        </div>
+    </div>
+    <div class="px-10 lg:px-36">
+        <hr>
+        <div class="flex flex-wrap my-3 md:w-[90%] mx-auto items-center justify-center gap-36">
+            <div class="flex flex-col w-[100%] md:w-4/12 gap-5">
+                <div>
+                    <h1 class="text-3xl font-semibold mb-6">Healing starts here</h1>
+                    <h1 class="text-xl mb-1 font-bold">The right answers the first time</h1>
+                    <p>Effective treatment depends on getting the right diagnosis. Our experts diagnose and treat the toughest medical challenges.</p>
+                </div>
+                <div class="">
+                    <h1 class="text-xl font-bold">Top-ranked in the U.S.</h1>
+                    <p>Mayo Clinic has more No. 1 rankings than any other hospital in the nation according to U.S. News & World Report.
+                    <a href="#" class="text-blue-700 underline">Learn more about our top-ranked specialties.</a></p>
+                </div> 
+                <div class="text-blue-600 flex items-center gap-2 text-lg pb-12 pt-3">
+                    <i class="fa fa-male"></i>
+                    <a href="#">Why choose Mayo Clinic  ></a>   
+                </div>  
+            </div>
+            <div class="hidden md:block md:w-5/12">
+                <div>
+                    <img src="/src/Assets/healing-starts-here-unmasked-21-7949-600x800 (1).jpg" alt="healing" class="rounded-2xl w-[100%]">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="md:hidden">
+        <div>
+            <img src="/src/Assets/healing-starts-here-unmasked-21-7949-600x800 (1).jpg" alt="healing" class="w-[100vw] xl:h-[100vh]">
+        </div>
+    </div>
+    <div class="px-10 lg:px-36 pt-8 md:pt-16">
+        <div class="flex flex-row-reverse flex-wrap my-3 md:w-[90%] mx-auto items-center justify-center gap-20">
+            <div class="flex flex-col w-[100%] md:w-4/12 gap-5 place-content-end">
+                <div>
+                    <h1 class="text-3xl font-semibold mb-5">World-class care for global patients</h1>
+                    <p>We make it easy for patients around the world to get care from Mayo Clinic.</p>
+                </div>
+                <div class="text-blue-600 flex items-center gap-2 text-lg pb-10 pt-3">
+                    <i class="fa fa-male"></i>
+                    <a href="#">International services   ></a>   
+                </div>  
+            </div>
+            <div class="hidden md:block w-6/12 place-content-start">
+                <div>
+                    <img src="/src/Assets/photo_people_man-standing-turban-rocks-sea_600x800.avif" alt="healing" class="rounded-2xl w-[89%]">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="md:hidden">
+        <div>
+            <img src="/src/Assets/photo_people_man-standing-turban-rocks-sea_600x800.avif" alt="healing" class="w-[100vw] xl:h-[100vh]">
+        </div>
+    </div>
+    <section class="py-16">
+        <div class="px-10 grid grid-rows-1 gap-6 grid-flow-cols smp:grid-cols-2 lg:grid-cols-3 lg:px-36">
+            <div class="self-center">
+                <h1 class="text-4xl">Locations</h1>
+                <p class="py-4">Learn more about Mayo Clinic locations or choose a specific location.</p>
+                <div class="flex gap-2 items-center pt-6 text-blue-700 text-xl">
+                    <i class="fa fa-male"></i>
+                    <a href="#"><span class="whitespace-nowrap"> Explore all locations  ></span></a>
+                </div>
+            </div>
+            <div class="bg-[url('/src/Assets/Arizona.avif')] bg-top rounded-md">
+               <div class="pt-36 pb-4 px-4 mdp:pt-56 text-white bg-gradient-to-b from-[rgba(0,0,0,0)] to-[rgba(0,0,0,1)] rounded-md">
+                    <h1 class="text-2xl">Mayo Clinic in <span class="whitespace-nowrap">Arizona ></span></h1>
+                    <h3 class="text-lg">Phoenix & Scottsdale</h3>
+                </div>
+            </div>
+            <div class="bg-[url('/src/Assets/Florida.avif')] rounded-md">
+                <div class="pt-44 mdp:pt-56 pb-4 px-4 text-white bg-gradient-to-b from-[rgba(0,0,0,0)] to-[rgba(0,0,0,1)] rounded-md">
+                     <h1 class="text-2xl">Mayo Clinic in <span class="whitespace-nowrap">Florida > </span></h1>
+                     <h3 class="text-lg"> Jacksonville</h3>
+                 </div>
+            </div>
+            <div class="bg-[url('/src/Assets/minnesota.avif')] rounded-md">
+                <div class="pt-36 mdp:pt-56 smp:pt-44 pb-4 px-4 text-white bg-gradient-to-b from-[rgba(0,0,0,0)] to-[rgba(0,0,0,1)] rounded-md">
+                     <h1 class="text-2xl">Mayo Clinic in Minnesota ></h1>
+                     <h3 class="text-lg">Rochester</h3>
+                 </div>
+            </div>
+            <div class="bg-[url('/src/Assets/Mayo_Clinic_Health_System.avif')] rounded-md ">
+                <div class="pt-36 mdp:pt-56 smp:pt-44 pb-4 px-4 text-white bg-gradient-to-b from-[rgba(0,0,0,0)] to-[rgba(0,0,0,1)] rounded-md">
+                     <h1 class="text-2xl">Mayo Clinic Health System ></h1>
+                     <h3 class="text-lg">Iowa, Minnesota, Wisconsin</h3>
+                 </div>
+            </div>
+            <div class="bg-[url('/src/Assets/UK.avif')] rounded-md ">
+                <div class="pt-44 mdp:pt-56 pb-4 px-4 text-white bg-gradient-to-b from-[rgba(0,0,0,0)] to-[rgba(0,0,0,1)] rounded-md">
+                     <h1 class="text-2xl">Mayo Clinic <span class="whitespace-nowrap">Healthcare ></span></h1>
+                     <h3 class="text-lg">London, United Kingdom</h3>
+                 </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="px-10 lg:px-36 flex justify-start gap-10 flex-col md:flex-row md:gap-2">
+            <div class='md:w-1/3'>
+                <h1 class="text-4xl">
+                    Featured care areas
+                </h1>
+                <p>We solve the world's most serious and complex medical challenges.</p>
+            </div>
+            <div class="md:w-2/3 flex flex-row gap-8 font-[540]">
+                <div class="flex gap-1 flex-col w-6/12 md:w-6/12">
+                    <div class="border-t-2 py-2 md:py-3 text-[#1371D5] flex flex-row items-center justify-between">
+                        <a href="#">Bone marrow transplant</a>
+                        <h1 class="text-2xl">></h1>
+                    </div>
+                    <div class="border-t-2 py-2 md:py-3 text-[#1371D5] flex flex-row items-center justify-between">
+                        <a href="#">Brain aneurysm</a>
+                        <h1 class="text-2xl">></h1>
+                    </div>
+                    <div class="border-t-2 py-2 md:py-3 text-[#1371D5] flex flex-row items-center justify-between" >
+                        <a href="#">Brain tumor</a>
+                        <h1 class="text-2xl">></h1>
+                    </div>
+                    <div class="border-t-2 py-2 md:py-3 text-[#1371D5] flex flex-row items-center justify-between">
+                        <a href="#">Breast cancer</a>
+                        <h1 class="text-2xl">></h1>
+                    </div>
+                    <div class="border-t-2 py-2 md:py-3 text-[#1371D5] flex flex-row items-center justify-between">
+                        <a href="#">Colon cancer</a>
+                        <h1 class="text-2xl">></h1>
+                    </div>
+                    <div class="border-t-2 py-2 md:py-3 text-[#1371D5] flex flex-row items-center justify-between">
+                        <a href="#">Congenital heart disease</a>
+                        <h1 class="text-2xl">></h1>
+                    </div>
+                    <div class="border-t-2 py-2 md:py-3 text-[#1371D5] flex flex-row items-center justify-between">
+                        <a href="#">Glioma</a>
+                        <h1 class="text-2xl">></h1>
+                    </div>
+                </div>
+                <div class="flex gap-1 flex-col w-1/2 text-lg md:w-1/2">
+                    <div class="border-t-2 py-2 md:py-3 text-[#1371D5] flex flex-row items-center justify-between">
+                        <a href="#">Heart arrhythmia</a>
+                        <h1 class="text-2xl">></h1>
+                    </div>
+                    <div class="border-t-2 py-2 md:py-3 text-[#1371D5] flex flex-row items-center justify-between">
+                        <a href="#">Heart valve disease</a>
+                        <h1 class="text-2xl">></h1>
+                    </div>
+                    <div class="border-t-2 py-2 md:py-3 text-[#1371D5] flex flex-row items-center justify-between">
+                        <a href="#">Living-donor transplant</a>
+                        <h1 class="text-2xl">></h1>
+                    </div>
+                    <div class="border-t-2 py-2 md:py-3 text-[#1371D5] flex flex-row items-center justify-between">
+                        <a href="#">Lung transplant</a>
+                        <h1 class="text-2xl">></h1>
+                    </div>
+                    <div class="border-t-2 py-2 md:py-3 text-[#1371D5] flex flex-row items-center justify-between">
+                        <a href="#">Sarcoma</a>
+                        <h1 class="text-2xl">></h1>
+                    </div>
+                    <div class="border-t-2 py-2 md:py-3 text-[#1371D5] flex flex-row items-center justify-between">
+                        <a href="#">Testicular cancer</a>
+                        <h1 class="text-2xl">></h1>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </section>
+    <section class="bg-[#0D0D33] mt-10">
+        <div class="px-10 lg:px-36 py-12 flex flex-row gap-5 text-white md:items-center">
+            <div class="w-[200px] md:w-[200px] xs:hidden sm:block pt-2 md:pt-0">
+                <img src="/src/Assets/giving-charity.svg" alt="giving-charity">
+            </div>
+            <div class="flex flex-col gap-3 md:flex-row md:items-center">
+                <div class="flex flex-col lgp:flex-row md:w-5/6 gap-x-12 gap-y-5">
+                    <h1 class="font-bold text-4xl justify-self-start ">One gift, 3X the impact</h1>
+                    <p class=" md:mr-2">Join our Year-End Challenge and triple your gift to help shape the future of healthcare! </p>
+                </div>
+                <div class="mt-3 md:w-2/6 xl:w-1/5 xs:w-full lg:mt-0 justify-end self-start">
+                    <button class="px-10 py-3 text-lg bg-[#0057B8] rounded-full xs:w-full">Give Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-[#012D61] py-10">
+        
+        <!-- <div class="px-10 lg:px-36 flex flex-row flex-wrap gap-x-32 text-white"> -->
+        <div class="px-10 lg:px-36 text-white grid grid-rows-1 gap-x-10 gap-y-1 grid-flow-cols md:grid-cols-2 lg:grid-cols-3 grid-flow-row  items-start h-auto">
+            <!-- <div class="flex flex-col gap-4 xs:w-[100%] sm:w-1/2 md:w-1/4"> -->
+            <div class="flex flex-col gap-y-5 h-auto">
+                <div class="border-2 border-gray-600 hover:border-white py-4 px-5 flex flex-row gap-4 items-center justify-between rounded-md ">
+                    <div class="flex w-10/12 items-center gap-5">
+                        <i class="fa fa-male"></i>
+                        <p class="self-start text-lg">Find a doctor</p>
+                    </div>    
+                    <p class="w-1/12 justify-end">></p>
+                </div>
+                <div class="border border-gray-600 hover:border-white hover:border-2 py-4 px-5 flex flex-row gap-4 items-center justify-between rounded-md">
+                    <div class="flex w-10/12 items-center gap-5">
+                        <i class="fa fa-male"></i>
+                        <p class="self-start text-lg">Explore Careers</p>
+                    </div>    
+                    <p class="w-1/12 justify-end">></p>
+                </div>
+                <div class="border border-gray-600 hover:border-white hover:border-2 py-4 px-5 flex flex-row gap-4 items-center justify-between rounded-md">
+                    <div class="flex w-10/12 items-center gap-5">
+                        <i class="fa fa-male"></i>
+                        <p class="self-start text-lg">Sign up for free e-newsletters</p>
+                    </div>    
+                    <p class="w-1/12 justify-end">></p>
+                </div>
+            </div>
+            <div class="flex flex-col gap-y-4 max-h-fit pb-0 m-0 items-start">
+                <h1 class="text-2xl font-semibold mb-0 pb-0"> Medical Professionals  ></h1>
+                <a class="text-sm">Ask Mayo Expert</a>
+                <a class="text-sm">Clinical Trials</a>
+                <a class="text-sm">Mayo Clinic Alumni Association</a>
+                <a class="text-sm">Refer a Patient</a>
+            </div>           
+            <div class="flex flex-col gap-y-4">
+                <h1 class="text-2xl font-semibold mb-0 pb-0"> Medical Professionals  ></h1>
+                <a class="text-sm">Ask Mayo Expert</a>
+                <a class="text-sm">Clinical Trials</a>
+                <a class="text-sm">Mayo Clinic Alumni Association</a>
+                <a class="text-sm">Refer a Patient</a>
+            </div>
+            <div class="flex flex-col gap-y-4">
+                <h1 class="text-2xl font-semibold mb-0 pb-0"> About Mayo Clinic  ></h1>
+                <a class="text-sm">About this Site</a>
+                <a class="text-sm">Contact Us</a>
+                <a class="text-sm">Locations</a>
+                <a class="text-sm">Health Information Policy</a>
+                <a class="text-sm">Media Requests</a>
+                <a class="text-sm">News Network</a>
+                <a class="text-sm">Price Transparency</a>
+            </div>
+            <div class="flex flex-col gap-y-5">
+                <h1 class="text-2xl font-semibold mb-0 pb-0"> Businesses  ></h1>
+                <a class="text-sm">Executive Health Program</a>
+                <a class="text-sm">International Business Collaborations</a>
+                <a class="text-sm">Facilities & Real Estate</a>
+                <a class="text-sm">Supplier Information</a>
+            </div>
+            <div class="flex flex-col gap-y-5">
+                <h1 class="text-2xl font-semibold mb-0 pb-0"> Students  ></h1>
+                <a class="text-sm">Admissions Requirements</a>
+                <a class="text-sm">Degree Programs</a>
+                <a class="text-sm">Student & Faculty Portal</a>
+            </div>
+            <div class="flex flex-col gap-y-5">
+                <h1 class="text-2xl font-semibold mb-0 pb-0"> Researchers  ></h1>
+                <a class="text-sm">Research Faculty</a>
+            </div>
+            <div class="flex flex-col gap-y-5">
+                <h1 class="text-2xl font-semibold mb-0 pb-0"> International Patients  ></h1>
+                <a class="text-sm">Appointments</a>
+                <a class="text-sm">Financial Services</a>
+                <a class="text-sm">International Locations & Offices</a>
+            </div>
+            <div class="flex flex-col gap-y-5">
+                <h1 class="text-xl font-semibold mb-0 pb-0"> Charitable Care & Financial Assistance   ></h1>
+                <a class="text-sm">Community Health Needs Assessment</a>
+                <a class="text-sm">Financial Assistance Documents – Arizona</a>
+                <a class="text-sm">Financial Assistance Documents – Florida</a>
+                <a href="#"  class="text-sm">Financial Assistance Documents – Minnesota</a>
+            </div> 
+             
+        </div>
+        <div class="px-10 lg:px-36 my-10">
+            <div class="border-b border-gray-500"></div>
+        </div>
+        <div class="px-10 lg:px-36 flex flex-wrap justify-between md:mr-20 lg:mr-44">
+            <div class="text-white">
+                <h1 class="text-xl pb-1">Follow Mayo Clinic</h1>
+                <div class="flex gap-3">
+                    <div class=" flex border border-gray-500 rounded-[100%] w-[42px] py-2 text-xl hover:border-white">
+                        <div class="mx-auto">
+                            <a href="#" class="fa fa-twitter"></a>
+                        </div>
+                    </div>
+                    <div class=" flex border border-gray-500 rounded-[100%] w-[42px] py-2 text-xl hover:border-white">
+                        <div class="mx-auto">
+                            <a href="#" class="fa fa-youtube"></a>
+                        </div>
+                    </div>
+                    <div class=" flex border border-gray-500 rounded-[100%] w-[42px] py-2 text-xl hover:border-white">
+                        <div class="mx-auto">
+                            <a href="#" class="fa fa-facebook"></a>
+                        </div>
+                    </div>
+                    <div class=" flex border border-gray-500 rounded-[100%] w-[42px] py-2 text-xl hover:border-white">
+                        <div class="mx-auto">
+                            <a href="#" class="fa fa-linkedin"></a>
+                        </div>
+                    </div>
+                    <div class=" flex border border-gray-500 rounded-[100%] w-[42px] py-2 text-xl hover:border-white">
+                        <div class="mx-auto">
+                            <a href="#" class="fa fa-instagram"></a>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+            <div class=" text-white">
+                <div class="pb-6">
+                    <h1 class="text-xl">Get the Mayo Clinic app</h1>
+                    <div class="flex gap-4 ">
+                        <div>
+                            <a href="#"><img src="/src/Assets/Google_Play_Store_badge_EN.svg" alt="google"></a>
+                        </div>
+                        <div>
+                            <a href="#"><img src="/src/Assets/App_Store_Badge_EN.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-[#E1F0FF] px-10 lg:px-36">
+        <div class="flex flex-col text-sm md:flex-row md:flex-wrap gap-x-10 gap-y-6 py-12">
+            <a href="#">Terms and Conditions</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Notice of Privacy Practices</a>
+            <a href="#">Notice of Nondiscrimination</a>
+            <a href="#">Accessibility Statement</a>
+            <a href="#">Advertising and Sponsorship Policy</a>
+            <a href="#">Site Map</a>
+        </div>
+        <div class="border-t-2 py-6"></div>
+        <div class="flex flex-col-reverse flex-wrap md:flex-row md:flex-nowrap justify-between gap-y-6 gap-x-7 pb-16">
+            <p class="copyWrite">© 1998-2024 Mayo Foundation for Medical Education and Research (MFMER). All rights reserved.</p>
+        <div class="self-start flex gap-4 copyWrite">
+            <p class="text-black text-lg">Language:</p>
+            <p class="text-black text-lg">English</p>
+            <p class="text-black">^</p>
+        </div>
+    </div>
+</footer>
+<a href="#">
+    <div class="feedback w-[150px] text-white">
+        <p>feedback</p>
+    </div>
+</a>
+<!-- Grid Test -->
+<div class="grid">
+    <div>
+        <h1>1</h1>
+    </div>
+    <div>
+        <h1>2</h1>
+    </div>
+    <div>
+        <h1>3</h1>
+    </div>
+</div>
+
+</body>
+</html>
